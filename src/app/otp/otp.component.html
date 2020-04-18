@@ -1,0 +1,32 @@
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADD</title>
+
+    <form>
+        <div class="container"   style="margin-top: 0%;">
+          <h1>Enter Your OTP</h1>
+          <p>For security , we need to verify your identity. We sent a 5-digit code to name@domain.com.Please enter it below.</p>
+      
+              <label for="companyname"><b>Enter your code</b></label>
+              <section>
+                <form>
+                    <input id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)">
+                    <input id="codeBox2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)">
+                    <input id="codeBox3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)">
+                    <input id="codeBox4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)">
+                    <input id="codeBox5" type="number" maxlength="1" onkeyup="onKeyUpEvent(5, event)" onfocus="onFocusEvent(5)">
+                </form>
+            </section>
+          
+          <div class="clearfix">
+      
+            <button type="back" class="btn" style="width: 25%;" [routerLink]="['/companydetails']">Back</button> &nbsp;
+            <button type="otp" class="btn" style="width: 70%; background-color: orange;" [routerLink]="['/success']">Verify OTP</button>
+          </div>
+          <p>Didn'treceive the E-Mail? Check your spam filter for email from   <a href="#" style="color:orange">name@domain.com</a>.</p>
+        </div>
+      </form>
+
+  
